@@ -1,8 +1,2 @@
 #!/bin/bash
-
-current_directory=$(pwd)
-parent_directory=$(dirname "$current_directory")
-
-find "$current_directory" -maxdepth 1 -type f -name "*.html" -exec cp -u {} "$parent_directory" \;
-
-echo "Copying HTML files completed."
+cp -u *.html ..
